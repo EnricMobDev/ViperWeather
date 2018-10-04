@@ -26,6 +26,7 @@
 		0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26321660126000E11F4 /* HomeInteractor.swift */; };
 		0CEDE26A21660126000E11F4 /* HomeEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26421660126000E11F4 /* HomeEntities.swift */; };
 		0CEDE26C2166013F000E11F4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE26B2166013F000E11F4 /* HomeViewController.xib */; };
+		0CEDE27221666644000E11F4 /* MunicipalyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE27121666644000E11F4 /* MunicipalyResponse.swift */; };
 		191C4E79054C4AA50C255E6B /* Pods_ViperWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5068105E9E2158FD20CBDC57 /* Pods_ViperWeatherUITests.framework */; };
 		4D963CF5B6823F437CED7243 /* Pods_ViperWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022F7D33769E650855FBC185 /* Pods_ViperWeatherTests.framework */; };
 		AE725C20050A56E775F6975C /* Pods_ViperWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6850240D48B15E27EF4BAA2A /* Pods_ViperWeather.framework */; };
@@ -75,6 +76,7 @@
 		0CEDE26321660126000E11F4 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		0CEDE26421660126000E11F4 /* HomeEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntities.swift; sourceTree = "<group>"; };
 		0CEDE26B2166013F000E11F4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0CEDE27121666644000E11F4 /* MunicipalyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalyResponse.swift; sourceTree = "<group>"; };
 		29C17B4F03697A440A94F40E /* Pods-ViperWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherTests/Pods-ViperWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BB1BCF88D0D1CC815ABA750 /* Pods-ViperWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeather/Pods-ViperWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		5068105E9E2158FD20CBDC57 /* Pods_ViperWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +224,7 @@
 		0CEDE27021666525000E11F4 /* Municipaly */ = {
 			isa = PBXGroup;
 			children = (
+				0CEDE27121666644000E11F4 /* MunicipalyResponse.swift */,
 			);
 			path = Municipaly;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				0CEDE2572165E97A000E11F4 /* LoginRouter.swift in Sources */,
 				0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */,
 				0CEDE25B2165E97A000E11F4 /* LoginEntities.swift in Sources */,
+				0CEDE27221666644000E11F4 /* MunicipalyResponse.swift in Sources */,
 				0CEDE26821660126000E11F4 /* HomeProtocols.swift in Sources */,
 				0CEDE2592165E97A000E11F4 /* LoginProtocols.swift in Sources */,
 				0CEDE26721660126000E11F4 /* HomeViewController.swift in Sources */,

@@ -26,6 +26,9 @@
 		0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26321660126000E11F4 /* HomeInteractor.swift */; };
 		0CEDE26A21660126000E11F4 /* HomeEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26421660126000E11F4 /* HomeEntities.swift */; };
 		0CEDE26C2166013F000E11F4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE26B2166013F000E11F4 /* HomeViewController.xib */; };
+		191C4E79054C4AA50C255E6B /* Pods_ViperWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5068105E9E2158FD20CBDC57 /* Pods_ViperWeatherUITests.framework */; };
+		4D963CF5B6823F437CED7243 /* Pods_ViperWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022F7D33769E650855FBC185 /* Pods_ViperWeatherTests.framework */; };
+		AE725C20050A56E775F6975C /* Pods_ViperWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6850240D48B15E27EF4BAA2A /* Pods_ViperWeather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022F7D33769E650855FBC185 /* Pods_ViperWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE21D2165E70E000E11F4 /* ViperWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE2202165E70E000E11F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CEDE2272165E70F000E11F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +75,14 @@
 		0CEDE26321660126000E11F4 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		0CEDE26421660126000E11F4 /* HomeEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntities.swift; sourceTree = "<group>"; };
 		0CEDE26B2166013F000E11F4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		29C17B4F03697A440A94F40E /* Pods-ViperWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherTests/Pods-ViperWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		4BB1BCF88D0D1CC815ABA750 /* Pods-ViperWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeather/Pods-ViperWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		5068105E9E2158FD20CBDC57 /* Pods_ViperWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6850240D48B15E27EF4BAA2A /* Pods_ViperWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F3396BEACA9C756F70F0FA /* Pods-ViperWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherTests/Pods-ViperWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E04103D1782F85D31E614235 /* Pods-ViperWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherUITests/Pods-ViperWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEE12B2EA7DEBF94796E39E8 /* Pods-ViperWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeather/Pods-ViperWeather.release.xcconfig"; sourceTree = "<group>"; };
+		FF4777B4B9A29B61933C70B0 /* Pods-ViperWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherUITests/Pods-ViperWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE725C20050A56E775F6975C /* Pods_ViperWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D963CF5B6823F437CED7243 /* Pods_ViperWeatherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191C4E79054C4AA50C255E6B /* Pods_ViperWeatherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +120,8 @@
 				0CEDE2342165E70F000E11F4 /* ViperWeatherTests */,
 				0CEDE23F2165E70F000E11F4 /* ViperWeatherUITests */,
 				0CEDE21E2165E70E000E11F4 /* Products */,
+				9DD3C9EF02A97F30F27A1C72 /* Pods */,
+				A66AC376510129FD22371E04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +202,29 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		9DD3C9EF02A97F30F27A1C72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1BCF88D0D1CC815ABA750 /* Pods-ViperWeather.debug.xcconfig */,
+				FEE12B2EA7DEBF94796E39E8 /* Pods-ViperWeather.release.xcconfig */,
+				D7F3396BEACA9C756F70F0FA /* Pods-ViperWeatherTests.debug.xcconfig */,
+				29C17B4F03697A440A94F40E /* Pods-ViperWeatherTests.release.xcconfig */,
+				E04103D1782F85D31E614235 /* Pods-ViperWeatherUITests.debug.xcconfig */,
+				FF4777B4B9A29B61933C70B0 /* Pods-ViperWeatherUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A66AC376510129FD22371E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6850240D48B15E27EF4BAA2A /* Pods_ViperWeather.framework */,
+				022F7D33769E650855FBC185 /* Pods_ViperWeatherTests.framework */,
+				5068105E9E2158FD20CBDC57 /* Pods_ViperWeatherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CEDE2452165E70F000E11F4 /* Build configuration list for PBXNativeTarget "ViperWeather" */;
 			buildPhases = (
+				1396419EA45E98444CB55B3F /* [CP] Check Pods Manifest.lock */,
 				0CEDE2192165E70E000E11F4 /* Sources */,
 				0CEDE21A2165E70E000E11F4 /* Frameworks */,
 				0CEDE21B2165E70E000E11F4 /* Resources */,
+				E18C8435CCEED0FA7E6B523A /* [CP] Embed Pods Frameworks */,
+				5B8AB5884D202B17E182D396 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CEDE2482165E70F000E11F4 /* Build configuration list for PBXNativeTarget "ViperWeatherTests" */;
 			buildPhases = (
+				5C152564367E5CF23EB1351A /* [CP] Check Pods Manifest.lock */,
 				0CEDE22D2165E70F000E11F4 /* Sources */,
 				0CEDE22E2165E70F000E11F4 /* Frameworks */,
 				0CEDE22F2165E70F000E11F4 /* Resources */,
+				A46FACE2C88B5957EE0AC401 /* [CP] Embed Pods Frameworks */,
+				5817DD285E40012FA4613FA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CEDE24B2165E70F000E11F4 /* Build configuration list for PBXNativeTarget "ViperWeatherUITests" */;
 			buildPhases = (
+				891D6E046805C13DD95143ED /* [CP] Check Pods Manifest.lock */,
 				0CEDE2382165E70F000E11F4 /* Sources */,
 				0CEDE2392165E70F000E11F4 /* Frameworks */,
 				0CEDE23A2165E70F000E11F4 /* Resources */,
+				FE17FEE54619D3B8F3F84C1A /* [CP] Embed Pods Frameworks */,
+				777617C48BB7DCAF8B71FF89 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +360,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1396419EA45E98444CB55B3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViperWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5817DD285E40012FA4613FA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperWeatherTests/Pods-ViperWeatherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B8AB5884D202B17E182D396 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperWeather/Pods-ViperWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C152564367E5CF23EB1351A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViperWeatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777617C48BB7DCAF8B71FF89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperWeatherUITests/Pods-ViperWeatherUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		891D6E046805C13DD95143ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViperWeatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A46FACE2C88B5957EE0AC401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperWeatherTests/Pods-ViperWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E18C8435CCEED0FA7E6B523A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ViperWeather/Pods-ViperWeather-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperWeather/Pods-ViperWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE17FEE54619D3B8F3F84C1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperWeatherUITests/Pods-ViperWeatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0CEDE2192165E70E000E11F4 /* Sources */ = {
@@ -494,15 +693,13 @@
 		};
 		0CEDE2462165E70F000E11F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB1BCF88D0D1CC815ABA750 /* Pods-ViperWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = ViperWeather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.ViperWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -512,15 +709,13 @@
 		};
 		0CEDE2472165E70F000E11F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE12B2EA7DEBF94796E39E8 /* Pods-ViperWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = ViperWeather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.ViperWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -530,17 +725,14 @@
 		};
 		0CEDE2492165E70F000E11F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F3396BEACA9C756F70F0FA /* Pods-ViperWeatherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = ViperWeatherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.ViperWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -551,17 +743,14 @@
 		};
 		0CEDE24A2165E70F000E11F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C17B4F03697A440A94F40E /* Pods-ViperWeatherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = ViperWeatherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.ViperWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -572,16 +761,13 @@
 		};
 		0CEDE24C2165E70F000E11F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04103D1782F85D31E614235 /* Pods-ViperWeatherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = ViperWeatherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.ViperWeatherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -592,16 +778,13 @@
 		};
 		0CEDE24D2165E70F000E11F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF4777B4B9A29B61933C70B0 /* Pods-ViperWeatherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DU4SSYH2B5;
 				INFOPLIST_FILE = ViperWeatherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.enricpou.ViperWeatherUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

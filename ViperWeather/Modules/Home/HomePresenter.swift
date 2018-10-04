@@ -17,7 +17,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
     var username: String = ""
     
     func updateView() {
-        view?.titleLabel.text = "Bienvenido \(username)"
+            view?.titleLabel.text = "Bienvenido \(username)"
         interactor?.fetchSomething()
     }
 }

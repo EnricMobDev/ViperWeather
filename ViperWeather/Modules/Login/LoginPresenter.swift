@@ -26,7 +26,7 @@ class LoginPresenter: LoginViewToPresenterProtocol {
             router?.navigateToHome(viewController, username)
             
         } else {            
-            print("Nombre de usuario o contraseña incorrectos")
+            print("Nombre de usuario o contraseña incorrecto")
         }
     }
 }

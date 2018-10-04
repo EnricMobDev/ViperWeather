@@ -1,5 +1,5 @@
 //
-//  MunicipalyResponse.swift
+//  MunicipalityResponse.swift
 //  ViperWeather
 //
 //  Created by Enric Pou Villanueva on 04/10/2018.

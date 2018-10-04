@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0CEDE2212165E70E000E11F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2202165E70E000E11F4 /* AppDelegate.swift */; };
-		0CEDE2232165E70E000E11F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2222165E70E000E11F4 /* ViewController.swift */; };
-		0CEDE2262165E70E000E11F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2242165E70E000E11F4 /* Main.storyboard */; };
 		0CEDE2282165E70F000E11F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2272165E70F000E11F4 /* Assets.xcassets */; };
 		0CEDE22B2165E70F000E11F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2292165E70F000E11F4 /* LaunchScreen.storyboard */; };
 		0CEDE2362165E70F000E11F4 /* ViperWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2352165E70F000E11F4 /* ViperWeatherTests.swift */; };
 		0CEDE2412165E70F000E11F4 /* ViperWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2402165E70F000E11F4 /* ViperWeatherUITests.swift */; };
+		0CEDE2562165E97A000E11F4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2502165E97A000E11F4 /* LoginPresenter.swift */; };
+		0CEDE2572165E97A000E11F4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2512165E97A000E11F4 /* LoginRouter.swift */; };
+		0CEDE2582165E97A000E11F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2522165E97A000E11F4 /* LoginViewController.swift */; };
+		0CEDE2592165E97A000E11F4 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2532165E97A000E11F4 /* LoginProtocols.swift */; };
+		0CEDE25A2165E97A000E11F4 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2542165E97A000E11F4 /* LoginInteractor.swift */; };
+		0CEDE25B2165E97A000E11F4 /* LoginEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2552165E97A000E11F4 /* LoginEntities.swift */; };
+		0CEDE25D2165FDD2000E11F4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE25C2165FDD2000E11F4 /* LoginViewController.xib */; };
+		0CEDE26521660126000E11F4 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE25F21660126000E11F4 /* HomePresenter.swift */; };
+		0CEDE26621660126000E11F4 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26021660126000E11F4 /* HomeRouter.swift */; };
+		0CEDE26721660126000E11F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26121660126000E11F4 /* HomeViewController.swift */; };
+		0CEDE26821660126000E11F4 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26221660126000E11F4 /* HomeProtocols.swift */; };
+		0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26321660126000E11F4 /* HomeInteractor.swift */; };
+		0CEDE26A21660126000E11F4 /* HomeEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE26421660126000E11F4 /* HomeEntities.swift */; };
+		0CEDE26C2166013F000E11F4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE26B2166013F000E11F4 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +48,6 @@
 /* Begin PBXFileReference section */
 		0CEDE21D2165E70E000E11F4 /* ViperWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE2202165E70E000E11F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CEDE2222165E70E000E11F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0CEDE2252165E70E000E11F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CEDE2272165E70F000E11F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CEDE22A2165E70F000E11F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CEDE22C2165E70F000E11F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +57,20 @@
 		0CEDE23C2165E70F000E11F4 /* ViperWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE2402165E70F000E11F4 /* ViperWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperWeatherUITests.swift; sourceTree = "<group>"; };
 		0CEDE2422165E70F000E11F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CEDE2502165E97A000E11F4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		0CEDE2512165E97A000E11F4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		0CEDE2522165E97A000E11F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CEDE2532165E97A000E11F4 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		0CEDE2542165E97A000E11F4 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		0CEDE2552165E97A000E11F4 /* LoginEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntities.swift; sourceTree = "<group>"; };
+		0CEDE25C2165FDD2000E11F4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		0CEDE25F21660126000E11F4 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		0CEDE26021660126000E11F4 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		0CEDE26121660126000E11F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0CEDE26221660126000E11F4 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		0CEDE26321660126000E11F4 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		0CEDE26421660126000E11F4 /* HomeEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntities.swift; sourceTree = "<group>"; };
+		0CEDE26B2166013F000E11F4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +121,8 @@
 		0CEDE21F2165E70E000E11F4 /* ViperWeather */ = {
 			isa = PBXGroup;
 			children = (
+				0CEDE24E2165E768000E11F4 /* Modules */,
 				0CEDE2202165E70E000E11F4 /* AppDelegate.swift */,
-				0CEDE2222165E70E000E11F4 /* ViewController.swift */,
-				0CEDE2242165E70E000E11F4 /* Main.storyboard */,
 				0CEDE2272165E70F000E11F4 /* Assets.xcassets */,
 				0CEDE2292165E70F000E11F4 /* LaunchScreen.storyboard */,
 				0CEDE22C2165E70F000E11F4 /* Info.plist */,
@@ -123,6 +146,43 @@
 				0CEDE2422165E70F000E11F4 /* Info.plist */,
 			);
 			path = ViperWeatherUITests;
+			sourceTree = "<group>";
+		};
+		0CEDE24E2165E768000E11F4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0CEDE24F2165E966000E11F4 /* Login */,
+				0CEDE25E21660107000E11F4 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0CEDE24F2165E966000E11F4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0CEDE2502165E97A000E11F4 /* LoginPresenter.swift */,
+				0CEDE2512165E97A000E11F4 /* LoginRouter.swift */,
+				0CEDE2522165E97A000E11F4 /* LoginViewController.swift */,
+				0CEDE2532165E97A000E11F4 /* LoginProtocols.swift */,
+				0CEDE2542165E97A000E11F4 /* LoginInteractor.swift */,
+				0CEDE2552165E97A000E11F4 /* LoginEntities.swift */,
+				0CEDE25C2165FDD2000E11F4 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0CEDE25E21660107000E11F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0CEDE25F21660126000E11F4 /* HomePresenter.swift */,
+				0CEDE26021660126000E11F4 /* HomeRouter.swift */,
+				0CEDE26121660126000E11F4 /* HomeViewController.swift */,
+				0CEDE26221660126000E11F4 /* HomeProtocols.swift */,
+				0CEDE26321660126000E11F4 /* HomeInteractor.swift */,
+				0CEDE26421660126000E11F4 /* HomeEntities.swift */,
+				0CEDE26B2166013F000E11F4 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +291,8 @@
 			files = (
 				0CEDE22B2165E70F000E11F4 /* LaunchScreen.storyboard in Resources */,
 				0CEDE2282165E70F000E11F4 /* Assets.xcassets in Resources */,
-				0CEDE2262165E70E000E11F4 /* Main.storyboard in Resources */,
+				0CEDE25D2165FDD2000E11F4 /* LoginViewController.xib in Resources */,
+				0CEDE26C2166013F000E11F4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +317,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CEDE2232165E70E000E11F4 /* ViewController.swift in Sources */,
+				0CEDE2562165E97A000E11F4 /* LoginPresenter.swift in Sources */,
+				0CEDE25A2165E97A000E11F4 /* LoginInteractor.swift in Sources */,
+				0CEDE2572165E97A000E11F4 /* LoginRouter.swift in Sources */,
+				0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */,
+				0CEDE25B2165E97A000E11F4 /* LoginEntities.swift in Sources */,
+				0CEDE26821660126000E11F4 /* HomeProtocols.swift in Sources */,
+				0CEDE2592165E97A000E11F4 /* LoginProtocols.swift in Sources */,
+				0CEDE26721660126000E11F4 /* HomeViewController.swift in Sources */,
+				0CEDE2582165E97A000E11F4 /* LoginViewController.swift in Sources */,
 				0CEDE2212165E70E000E11F4 /* AppDelegate.swift in Sources */,
+				0CEDE26A21660126000E11F4 /* HomeEntities.swift in Sources */,
+				0CEDE26621660126000E11F4 /* HomeRouter.swift in Sources */,
+				0CEDE26521660126000E11F4 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0CEDE2242165E70E000E11F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0CEDE2252165E70E000E11F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0CEDE2292165E70F000E11F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,16 +8,19 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
-    @IBOutlet weak var titleLabel: UILabel!
+class HomeViewController: UIViewController, UITableViewDelegate {
+
+    @IBOutlet weak var homeDetailTableView: UITableView!
     
     var presenter: HomeViewToPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.updateView()
         
+        homeDetailTableView.delegate = self
+        
+        presenter?.setUpView()
+        presenter?.updateView()
     }
     
     override func didReceiveMemoryWarning() {

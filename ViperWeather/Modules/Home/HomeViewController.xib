@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ViperWeather" customModuleProvider="target">
             <connections>
+                <outlet property="homeDetailTableView" destination="Oqe-mV-7aS" id="skZ-qj-JMu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="13s-lw-tYy"/>
             </connections>
         </placeholder>

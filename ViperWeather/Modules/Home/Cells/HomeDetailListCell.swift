@@ -8,8 +8,18 @@
 
 import UIKit
 
-class HomeDetailListCell: UITableViewCell {
-    
+protocol CellType {
+    static func cellType() -> String
+}
+
+extension CellType where Self: UITableViewCell {
+    static func cellType() -> String {
+        return String(describing: self)
+    }
+}
+
+class HomeDetailListCell: UITableViewCell, CellType {
+
     @IBOutlet weak var hourLabel: UILabel!
     @IBOutlet weak var setHourLabel: UILabel!
     @IBOutlet weak var stateLabel: UILabel!

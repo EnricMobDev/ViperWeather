@@ -13,11 +13,13 @@ internal final class HomeDetailListDrawer: CellDrawerProtocol {
     
     // MARK: - Constants
     private struct Constants {
-        static let reuseID = "HomeDetailListCell"
+        static let reuseID = HomeDetailListCell.cellType()
     }
     
     // MARK: - CellDrawerProtocol
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        tableView.register(UINib(nibName: HomeDetailListCell.cellType(), bundle: nil), forCellReuseIdentifier: HomeDetailListCell.cellType())
         
         return tableView.dequeueReusableCell(withIdentifier: Constants.reuseID, for: indexPath)
     }

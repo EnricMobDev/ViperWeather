@@ -10,7 +10,7 @@ import UIKit
 
 protocol HomePresenterToViewProtocol: class{
     func showSomething(argument: HomeModel)
-    var titleLabel: UILabel! {get set}
+    var homeDetailTableView: UITableView! { get set }
 }
 
 protocol HomeInteractorToPresenterProtocol: class{
@@ -27,7 +27,7 @@ protocol HomeViewToPresenterProtocol: class{
     var interactor: HomePresenterToInteractorProtocol? {get set}
     var router: HomePresenterToRouterProtocol? {get set}
     
-    var username: String {get set}
+    func setUpView()
     func updateView()
 }
 

@@ -8,21 +8,11 @@
 
 import UIKit
 
-protocol CellType {
-    static func cellType() -> String
-}
-
-extension CellType where Self: UITableViewCell {
-    static func cellType() -> String {
-        return String(describing: self)
-    }
-}
-
 protocol HomeDetailListCellProtocol {
     func actionWhenTapTheCell()
 }
 
-class HomeDetailListCell: UITableViewCell, CellType {
+class HomeDetailListCell: UITableViewCell, GetCellIdentifierProtocol {
 
     open var delegate: HomeDetailListCellProtocol?
     

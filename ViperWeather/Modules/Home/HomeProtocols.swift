@@ -35,4 +35,5 @@ protocol HomeViewToPresenterProtocol: class{
 
 protocol HomePresenterToRouterProtocol: class{
     static func createModule(_ username: String) -> UIViewController
+    func navigateToCollection(originViewController: UIViewController)
 }

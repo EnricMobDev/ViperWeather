@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7B2B1C216CA93A00636CD3 /* HomeDetailListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C7B2B1B216CA93A00636CD3 /* HomeDetailListCell.xib */; };
+		0C7B2B1E216CA97D00636CD3 /* HomeDetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B1D216CA97D00636CD3 /* HomeDetailListCell.swift */; };
+		0C7B2B24216CB11300636CD3 /* HomeDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B23216CB11300636CD3 /* HomeDetailList.swift */; };
+		0C7B2B26216CB1EC00636CD3 /* CellDrawerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B25216CB1EC00636CD3 /* CellDrawerProtocol.swift */; };
+		0C7B2B28216CB28A00636CD3 /* DrawerItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B27216CB28A00636CD3 /* DrawerItemProtocol.swift */; };
+		0C7B2B2A216CB31A00636CD3 /* HomeDetailListDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B29216CB31A00636CD3 /* HomeDetailListDrawer.swift */; };
 		0CEDE2212165E70E000E11F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2202165E70E000E11F4 /* AppDelegate.swift */; };
 		0CEDE2282165E70F000E11F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2272165E70F000E11F4 /* Assets.xcassets */; };
 		0CEDE22B2165E70F000E11F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2292165E70F000E11F4 /* LaunchScreen.storyboard */; };
@@ -51,6 +57,12 @@
 
 /* Begin PBXFileReference section */
 		022F7D33769E650855FBC185 /* Pods_ViperWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C7B2B1B216CA93A00636CD3 /* HomeDetailListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailListCell.xib; sourceTree = "<group>"; };
+		0C7B2B1D216CA97D00636CD3 /* HomeDetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailListCell.swift; sourceTree = "<group>"; };
+		0C7B2B23216CB11300636CD3 /* HomeDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailList.swift; sourceTree = "<group>"; };
+		0C7B2B25216CB1EC00636CD3 /* CellDrawerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDrawerProtocol.swift; sourceTree = "<group>"; };
+		0C7B2B27216CB28A00636CD3 /* DrawerItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerItemProtocol.swift; sourceTree = "<group>"; };
+		0C7B2B29216CB31A00636CD3 /* HomeDetailListDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailListDrawer.swift; sourceTree = "<group>"; };
 		0CEDE21D2165E70E000E11F4 /* ViperWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE2202165E70E000E11F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CEDE2272165E70F000E11F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +150,40 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		0C7B2B1A216CA91200636CD3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0C7B2B1B216CA93A00636CD3 /* HomeDetailListCell.xib */,
+				0C7B2B1D216CA97D00636CD3 /* HomeDetailListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0C7B2B20216CB05500636CD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C7B2B23216CB11300636CD3 /* HomeDetailList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C7B2B21216CB06B00636CD3 /* DrawerProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				0C7B2B25216CB1EC00636CD3 /* CellDrawerProtocol.swift */,
+				0C7B2B27216CB28A00636CD3 /* DrawerItemProtocol.swift */,
+			);
+			path = DrawerProtocols;
+			sourceTree = "<group>";
+		};
+		0C7B2B22216CB08300636CD3 /* Drawers */ = {
+			isa = PBXGroup;
+			children = (
+				0C7B2B29216CB31A00636CD3 /* HomeDetailListDrawer.swift */,
+			);
+			path = Drawers;
+			sourceTree = "<group>";
+		};
 		0CEDE2142165E70E000E11F4 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +212,7 @@
 				0CEDE26E216664F6000E11F4 /* Common */,
 				0CEDE24E2165E768000E11F4 /* Modules */,
 				0C7B2B16216C981400636CD3 /* NetworkLayer */,
+				0C7B2B21216CB06B00636CD3 /* DrawerProtocols */,
 				0CEDE2202165E70E000E11F4 /* AppDelegate.swift */,
 				0CEDE2272165E70F000E11F4 /* Assets.xcassets */,
 				0CEDE2292165E70F000E11F4 /* LaunchScreen.storyboard */,
@@ -218,6 +265,9 @@
 		0CEDE25E21660107000E11F4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0C7B2B22216CB08300636CD3 /* Drawers */,
+				0C7B2B20216CB05500636CD3 /* Models */,
+				0C7B2B1A216CA91200636CD3 /* Cells */,
 				0CEDE25F21660126000E11F4 /* HomePresenter.swift */,
 				0CEDE26021660126000E11F4 /* HomeRouter.swift */,
 				0CEDE26121660126000E11F4 /* HomeViewController.swift */,
@@ -393,6 +443,7 @@
 				0CEDE2282165E70F000E11F4 /* Assets.xcassets in Resources */,
 				0CEDE25D2165FDD2000E11F4 /* LoginViewController.xib in Resources */,
 				0CEDE26C2166013F000E11F4 /* HomeViewController.xib in Resources */,
+				0C7B2B1C216CA93A00636CD3 /* HomeDetailListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,11 +619,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CEDE2562165E97A000E11F4 /* LoginPresenter.swift in Sources */,
+				0C7B2B26216CB1EC00636CD3 /* CellDrawerProtocol.swift in Sources */,
+				0C7B2B1E216CA97D00636CD3 /* HomeDetailListCell.swift in Sources */,
+				0C7B2B28216CB28A00636CD3 /* DrawerItemProtocol.swift in Sources */,
 				0CEDE25A2165E97A000E11F4 /* LoginInteractor.swift in Sources */,
 				0CEDE2572165E97A000E11F4 /* LoginRouter.swift in Sources */,
+				0C7B2B2A216CB31A00636CD3 /* HomeDetailListDrawer.swift in Sources */,
 				0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */,
 				0CEDE25B2165E97A000E11F4 /* LoginEntities.swift in Sources */,
 				0CEDE27221666644000E11F4 /* MunicipalityResponse.swift in Sources */,
+				0C7B2B24216CB11300636CD3 /* HomeDetailList.swift in Sources */,
 				0CEDE26821660126000E11F4 /* HomeProtocols.swift in Sources */,
 				0CEDE2592165E97A000E11F4 /* LoginProtocols.swift in Sources */,
 				0CEDE26721660126000E11F4 /* HomeViewController.swift in Sources */,

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HomeDetailListCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeDetailListCell" rowHeight="73" id="hhr-7L-je0" customClass="HomeDetailListCell" customModule="ViperWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hhr-7L-je0" id="xC5-pu-kdQ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-3y-68T">
+                        <rect key="frame" x="16" y="11" width="57.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zO-rl-Xun">
+                        <rect key="frame" x="113.5" y="11" width="21" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJs-Mo-eZV">
+                        <rect key="frame" x="16" y="40" width="57.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nublado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XK-J4-Qqd">
+                        <rect key="frame" x="113.5" y="40" width="64.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qk-ub-Yl2">
+                        <rect key="frame" x="260" y="21" width="86" height="30"/>
+                        <state key="normal" title="More Details"/>
+                        <connections>
+                            <action selector="moreDetailsButton:" destination="hhr-7L-je0" eventType="touchUpInside" id="511-uZ-bsq"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0zO-rl-Xun" firstAttribute="leading" secondItem="5Hm-3y-68T" secondAttribute="trailing" constant="40" id="2IW-98-4Jw"/>
+                    <constraint firstItem="0zO-rl-Xun" firstAttribute="centerY" secondItem="5Hm-3y-68T" secondAttribute="centerY" id="3T6-ie-vl0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0XK-J4-Qqd" secondAttribute="bottom" constant="1" id="3Zs-X7-whi"/>
+                    <constraint firstItem="0XK-J4-Qqd" firstAttribute="centerY" secondItem="MJs-Mo-eZV" secondAttribute="centerY" id="8nE-7n-Dc2"/>
+                    <constraint firstItem="1Qk-ub-Yl2" firstAttribute="leading" secondItem="0zO-rl-Xun" secondAttribute="trailing" constant="125.5" id="KYW-ac-PIK"/>
+                    <constraint firstItem="MJs-Mo-eZV" firstAttribute="leading" secondItem="xC5-pu-kdQ" secondAttribute="leadingMargin" id="LCy-Z5-upF"/>
+                    <constraint firstItem="0zO-rl-Xun" firstAttribute="top" secondItem="xC5-pu-kdQ" secondAttribute="topMargin" id="Lzj-Ml-aSp"/>
+                    <constraint firstItem="5Hm-3y-68T" firstAttribute="leading" secondItem="xC5-pu-kdQ" secondAttribute="leadingMargin" id="Mh7-Qc-12y"/>
+                    <constraint firstItem="1Qk-ub-Yl2" firstAttribute="top" secondItem="xC5-pu-kdQ" secondAttribute="topMargin" constant="10" id="PAb-EG-Mq3"/>
+                    <constraint firstItem="5Hm-3y-68T" firstAttribute="top" secondItem="xC5-pu-kdQ" secondAttribute="topMargin" id="PzM-zU-08O"/>
+                    <constraint firstItem="1Qk-ub-Yl2" firstAttribute="leading" secondItem="0XK-J4-Qqd" secondAttribute="trailing" constant="82" id="X0N-PX-koQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1Qk-ub-Yl2" secondAttribute="trailing" constant="13" id="cnG-HU-hn9"/>
+                    <constraint firstItem="0XK-J4-Qqd" firstAttribute="leading" secondItem="0zO-rl-Xun" secondAttribute="leading" id="iaw-53-jei"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1Qk-ub-Yl2" secondAttribute="bottom" constant="11" id="jnz-K6-mOl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MJs-Mo-eZV" secondAttribute="bottom" constant="1" id="lAM-Nz-tBa"/>
+                    <constraint firstItem="0XK-J4-Qqd" firstAttribute="top" secondItem="0zO-rl-Xun" secondAttribute="bottom" constant="8" id="mbe-Hh-8YP"/>
+                    <constraint firstItem="0XK-J4-Qqd" firstAttribute="leading" secondItem="MJs-Mo-eZV" secondAttribute="trailing" constant="40" id="qMu-wb-Vd9"/>
+                    <constraint firstItem="MJs-Mo-eZV" firstAttribute="top" secondItem="5Hm-3y-68T" secondAttribute="bottom" constant="8" id="xDA-wo-TZh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hourLabel" destination="5Hm-3y-68T" id="zQ5-bq-aHe"/>
+                <outlet property="setHourLabel" destination="0zO-rl-Xun" id="DQS-Kd-TWO"/>
+                <outlet property="setStateLabel" destination="0XK-J4-Qqd" id="geJ-bs-yiH"/>
+                <outlet property="stateLabel" destination="MJs-Mo-eZV" id="e5c-JO-79I"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

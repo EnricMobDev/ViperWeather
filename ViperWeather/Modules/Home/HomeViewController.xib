@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ViperWeather" customModuleProvider="target">
             <connections>
-                <outlet property="titleLabel" destination="jex-bN-GS3" id="TPO-Cd-C3g"/>
+                <outlet property="homeDetailTableView" destination="Oqe-mV-7aS" id="skZ-qj-JMu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="13s-lw-tYy"/>
             </connections>
         </placeholder>
@@ -20,18 +20,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jex-bN-GS3">
-                    <rect key="frame" x="20" y="80" width="335" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oqe-mV-7aS">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="jex-bN-GS3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="KFv-gW-tgL"/>
-                <constraint firstItem="jex-bN-GS3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="O0q-9h-vVb"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jex-bN-GS3" secondAttribute="trailing" constant="20" id="tHd-vg-f0H"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Oqe-mV-7aS" secondAttribute="trailing" id="38X-Xv-db8"/>
+                <constraint firstItem="Oqe-mV-7aS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZTz-zH-MqN"/>
+                <constraint firstItem="Oqe-mV-7aS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hvR-LD-3VI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Oqe-mV-7aS" secondAttribute="bottom" id="v7G-xu-tIX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>

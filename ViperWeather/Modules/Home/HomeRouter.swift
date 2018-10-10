@@ -20,10 +20,13 @@ class HomeRouter: HomePresenterToRouterProtocol{
         view.presenter = presenter
         presenter.view = view
         presenter.router = router
-        presenter.username = username
         presenter.interactor = interactor
         interactor.presenter = presenter
         
         return view
+    }
+    
+    func navigateToCollection(originViewController: UIViewController) {
+        originViewController.present(CollectionRouter.createModule(), animated: true)
     }
 }

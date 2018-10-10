@@ -43,7 +43,9 @@ class HomePresenter: NSObject, HomeViewToPresenterProtocol, UITableViewDataSourc
     }
     
     func actionWhenTapTheCell() {
-        print("Hello")
+        
+        guard let viewController = view as? UIViewController else { return }
+        router?.navigateToCollection(originViewController: viewController)
     }
     
     func userTapTheCell() {

@@ -13,4 +13,5 @@ internal struct HomeDetailList {
     var setHourText: String
     var stateText: String
     var setStateText: String
+    var delegate: HomeDetailListCellProtocol?
 }

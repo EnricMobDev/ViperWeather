@@ -26,18 +26,28 @@ class HomePresenter: NSObject, HomeViewToPresenterProtocol, UITableViewDataSourc
         configure(homeDetailTable)
         view?.homeDetailTableView.dataSource = self
         
-        let fiveHourCell = HomeDetailList(hourText: "Hour", setHourText: "5h", stateText: "State", setStateText: "Sunny")
+        guard let delegate = view?.homeDetailTableView.delegate as? HomeDetailListCellProtocol else { return }
+        
+        let fiveHourCell = HomeDetailList(hourText: "Hour", setHourText: "5h", stateText: "State", setStateText: "Sunny", delegate: delegate)
         createCells.append(fiveHourCell)
         
-        let sixHourCell = HomeDetailList(hourText: "Hour", setHourText: "6h", stateText: "State", setStateText: "Sunny")
+        let sixHourCell = HomeDetailList(hourText: "Hour", setHourText: "6h", stateText: "State", setStateText: "Sunny", delegate: delegate)
         createCells.append(sixHourCell)
         
-        let sevenHourCell = HomeDetailList(hourText: "Hour", setHourText: "7h", stateText: "State", setStateText: "Sunny")
+        let sevenHourCell = HomeDetailList(hourText: "Hour", setHourText: "7h", stateText: "State", setStateText: "Sunny", delegate: delegate)
         createCells.append(sevenHourCell)
     }
     
     func updateView() {
         interactor?.fetchSomething()
+    }
+    
+    func actionWhenTapTheCell() {
+        print("Hello")
+    }
+    
+    func userTapTheCell() {
+        print("Whatssss")
     }
     
     // MARK: - UITableViewDelegate, UITableViewDatasource

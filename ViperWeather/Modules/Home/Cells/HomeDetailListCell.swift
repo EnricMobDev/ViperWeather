@@ -18,11 +18,22 @@ extension CellType where Self: UITableViewCell {
     }
 }
 
+protocol HomeDetailListCellProtocol {
+    func actionWhenTapTheCell()
+}
+
 class HomeDetailListCell: UITableViewCell, CellType {
 
+    open var delegate: HomeDetailListCellProtocol?
+    
     @IBOutlet weak var hourLabel: UILabel!
     @IBOutlet weak var setHourLabel: UILabel!
     @IBOutlet weak var stateLabel: UILabel!
     @IBOutlet weak var setStateLabel: UILabel!
+    
+    @IBAction func moreDetailsButton(_ sender: Any) {
+        
+        delegate?.actionWhenTapTheCell()
+    }
     
 }

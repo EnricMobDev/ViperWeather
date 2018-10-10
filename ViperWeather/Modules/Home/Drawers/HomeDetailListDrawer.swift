@@ -34,6 +34,7 @@ internal final class HomeDetailListDrawer: CellDrawerProtocol {
         cell.setHourLabel.text = item.setHourText
         cell.stateLabel.text = item.stateText
         cell.setStateLabel.text = item.setStateText
+        cell.delegate = item.delegate
     }
 }
 

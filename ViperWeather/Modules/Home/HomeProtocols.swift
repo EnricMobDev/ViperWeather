@@ -29,6 +29,8 @@ protocol HomeViewToPresenterProtocol: class{
     
     func setUpView()
     func updateView()
+    func actionWhenTapTheCell()
+    func userTapTheCell()
 }
 
 protocol HomePresenterToRouterProtocol: class{

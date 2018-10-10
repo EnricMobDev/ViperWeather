@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate {
+class HomeViewController: UIViewController, UITableViewDelegate, HomeDetailListCellProtocol {
 
     @IBOutlet weak var homeDetailTableView: UITableView!
     
@@ -25,6 +25,15 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: - HomeDetailListCellProtocol
+    func actionWhenTapTheCell() {
+        presenter?.actionWhenTapTheCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.userTapTheCell()
     }
 }
 

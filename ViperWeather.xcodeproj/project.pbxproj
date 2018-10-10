@@ -13,6 +13,13 @@
 		0C7B2B26216CB1EC00636CD3 /* CellDrawerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B25216CB1EC00636CD3 /* CellDrawerProtocol.swift */; };
 		0C7B2B28216CB28A00636CD3 /* DrawerItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B27216CB28A00636CD3 /* DrawerItemProtocol.swift */; };
 		0C7B2B2A216CB31A00636CD3 /* HomeDetailListDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B29216CB31A00636CD3 /* HomeDetailListDrawer.swift */; };
+		0C7B2B3D216DE55F00636CD3 /* CollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B37216DE55F00636CD3 /* CollectionPresenter.swift */; };
+		0C7B2B3E216DE55F00636CD3 /* CollectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B38216DE55F00636CD3 /* CollectionRouter.swift */; };
+		0C7B2B3F216DE55F00636CD3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B39216DE55F00636CD3 /* CollectionViewController.swift */; };
+		0C7B2B40216DE55F00636CD3 /* CollectionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B3A216DE55F00636CD3 /* CollectionProtocols.swift */; };
+		0C7B2B41216DE55F00636CD3 /* CollectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B3B216DE55F00636CD3 /* CollectionInteractor.swift */; };
+		0C7B2B42216DE55F00636CD3 /* CollectionEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B3C216DE55F00636CD3 /* CollectionEntities.swift */; };
+		0C7B2B44216DE57B00636CD3 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C7B2B43216DE57B00636CD3 /* CollectionViewController.xib */; };
 		0CEDE2212165E70E000E11F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2202165E70E000E11F4 /* AppDelegate.swift */; };
 		0CEDE2282165E70F000E11F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2272165E70F000E11F4 /* Assets.xcassets */; };
 		0CEDE22B2165E70F000E11F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2292165E70F000E11F4 /* LaunchScreen.storyboard */; };
@@ -63,6 +70,13 @@
 		0C7B2B25216CB1EC00636CD3 /* CellDrawerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDrawerProtocol.swift; sourceTree = "<group>"; };
 		0C7B2B27216CB28A00636CD3 /* DrawerItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerItemProtocol.swift; sourceTree = "<group>"; };
 		0C7B2B29216CB31A00636CD3 /* HomeDetailListDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailListDrawer.swift; sourceTree = "<group>"; };
+		0C7B2B37216DE55F00636CD3 /* CollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPresenter.swift; sourceTree = "<group>"; };
+		0C7B2B38216DE55F00636CD3 /* CollectionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRouter.swift; sourceTree = "<group>"; };
+		0C7B2B39216DE55F00636CD3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		0C7B2B3A216DE55F00636CD3 /* CollectionProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionProtocols.swift; sourceTree = "<group>"; };
+		0C7B2B3B216DE55F00636CD3 /* CollectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionInteractor.swift; sourceTree = "<group>"; };
+		0C7B2B3C216DE55F00636CD3 /* CollectionEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEntities.swift; sourceTree = "<group>"; };
+		0C7B2B43216DE57B00636CD3 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		0CEDE21D2165E70E000E11F4 /* ViperWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE2202165E70E000E11F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CEDE2272165E70F000E11F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +198,20 @@
 			path = Drawers;
 			sourceTree = "<group>";
 		};
+		0C7B2B36216DE53D00636CD3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				0C7B2B37216DE55F00636CD3 /* CollectionPresenter.swift */,
+				0C7B2B38216DE55F00636CD3 /* CollectionRouter.swift */,
+				0C7B2B39216DE55F00636CD3 /* CollectionViewController.swift */,
+				0C7B2B3A216DE55F00636CD3 /* CollectionProtocols.swift */,
+				0C7B2B3B216DE55F00636CD3 /* CollectionInteractor.swift */,
+				0C7B2B3C216DE55F00636CD3 /* CollectionEntities.swift */,
+				0C7B2B43216DE57B00636CD3 /* CollectionViewController.xib */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		0CEDE2142165E70E000E11F4 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +272,7 @@
 			children = (
 				0CEDE24F2165E966000E11F4 /* Login */,
 				0CEDE25E21660107000E11F4 /* Home */,
+				0C7B2B36216DE53D00636CD3 /* Collection */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -439,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7B2B44216DE57B00636CD3 /* CollectionViewController.xib in Resources */,
 				0CEDE22B2165E70F000E11F4 /* LaunchScreen.storyboard in Resources */,
 				0CEDE2282165E70F000E11F4 /* Assets.xcassets in Resources */,
 				0CEDE25D2165FDD2000E11F4 /* LoginViewController.xib in Resources */,
@@ -618,9 +648,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7B2B40216DE55F00636CD3 /* CollectionProtocols.swift in Sources */,
 				0CEDE2562165E97A000E11F4 /* LoginPresenter.swift in Sources */,
 				0C7B2B26216CB1EC00636CD3 /* CellDrawerProtocol.swift in Sources */,
 				0C7B2B1E216CA97D00636CD3 /* HomeDetailListCell.swift in Sources */,
+				0C7B2B41216DE55F00636CD3 /* CollectionInteractor.swift in Sources */,
 				0C7B2B28216CB28A00636CD3 /* DrawerItemProtocol.swift in Sources */,
 				0CEDE25A2165E97A000E11F4 /* LoginInteractor.swift in Sources */,
 				0CEDE2572165E97A000E11F4 /* LoginRouter.swift in Sources */,
@@ -628,14 +660,18 @@
 				0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */,
 				0CEDE25B2165E97A000E11F4 /* LoginEntities.swift in Sources */,
 				0CEDE27221666644000E11F4 /* MunicipalityResponse.swift in Sources */,
+				0C7B2B3F216DE55F00636CD3 /* CollectionViewController.swift in Sources */,
 				0C7B2B24216CB11300636CD3 /* HomeDetailList.swift in Sources */,
 				0CEDE26821660126000E11F4 /* HomeProtocols.swift in Sources */,
 				0CEDE2592165E97A000E11F4 /* LoginProtocols.swift in Sources */,
 				0CEDE26721660126000E11F4 /* HomeViewController.swift in Sources */,
+				0C7B2B42216DE55F00636CD3 /* CollectionEntities.swift in Sources */,
 				0CEDE2582165E97A000E11F4 /* LoginViewController.swift in Sources */,
 				0CEDE2212165E70E000E11F4 /* AppDelegate.swift in Sources */,
+				0C7B2B3D216DE55F00636CD3 /* CollectionPresenter.swift in Sources */,
 				0CEDE26A21660126000E11F4 /* HomeEntities.swift in Sources */,
 				0CEDE26621660126000E11F4 /* HomeRouter.swift in Sources */,
+				0C7B2B3E216DE55F00636CD3 /* CollectionRouter.swift in Sources */,
 				0CEDE26521660126000E11F4 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

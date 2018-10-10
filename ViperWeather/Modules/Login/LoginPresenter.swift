@@ -20,7 +20,7 @@ class LoginPresenter: LoginViewToPresenterProtocol {
     
     func login(_ username: String, _ password: String) {
 
-        if username == "Enric" && password == "Pou" {
+        if username == "" && password == "" {
             
             guard let viewController = view as? UIViewController else {return}
             router?.navigateToHome(viewController, username)

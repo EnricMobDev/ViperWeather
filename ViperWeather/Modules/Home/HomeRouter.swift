@@ -25,4 +25,8 @@ class HomeRouter: HomePresenterToRouterProtocol{
         
         return view
     }
+    
+    func navigateToCollection(originViewController: UIViewController) {
+        originViewController.present(CollectionRouter.createModule(), animated: true)
+    }
 }

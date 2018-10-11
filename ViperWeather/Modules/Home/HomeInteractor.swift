@@ -16,6 +16,24 @@ class HomeInteractor: HomePresenterToInteractorProtocol{
     
     var presenter: HomeInteractorToPresenterProtocol?
     
-    func fetchSomething() {
+    let localWeatherPetition = LocalWeatherNetwork()
+    let detailLocalWeather = DetailLocalWeatherNetwork()
+    
+    func fetchLocalWeather() {
+        
+        
+        localWeatherPetition.fetchLocalWeatherService(success: { (response) in
+            
+            guard let dataResponse = response.datos else { return }
+            self.detailLocalWeather.fetchDetailLocalWeatherService(localWeatherUrl: dataResponse, success: { (localWeatherResponse) in
+                
+                self.presenter?.detailWeatherResponseSucceed(localWeatherResponse)
+                
+            }, failure: { (error) in
+                self.presenter?.detailWeatherResponseFailed(error)
+            })
+        }) { (error) in
+            self.presenter?.detailWeatherResponseFailed(error)
+        }
     }
 }

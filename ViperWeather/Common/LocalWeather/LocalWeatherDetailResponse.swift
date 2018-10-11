@@ -1,5 +1,5 @@
 //
-//  MunicipalityResponse.swift
+//  LocalWeatherDetailResponse.swift
 //  ViperWeather
 //
 //  Created by Enric Pou Villanueva on 04/10/2018.
@@ -8,27 +8,27 @@
 
 import Foundation
 
-typealias MunicipalityResponse = [HeaderElement]
+//typealias Welcome = [WelcomeElement]
 
-struct HeaderElement {
+struct LocalWeatherDetailResponse: Codable {
     let origen: Origen?
     let elaborado, nombre, provincia: String?
     let prediccion: Prediccion?
     let id, version: String?
 }
 
-struct Origen {
+struct Origen: Codable {
     let productor: String?
     let web, enlace: String?
     let language, copyright: String?
     let notaLegal: String?
 }
 
-struct Prediccion {
+struct Prediccion: Codable {
     let dia: [Dia]?
 }
 
-struct Dia {
+struct Dia: Codable {
     let estadoCielo: [EstadoCielo]?
     let precipitacion, probPrecipitacion, probTormenta, nieve: [HumedadRelativa]?
     let probNieve, temperatura, sensTermica, humedadRelativa: [HumedadRelativa]?
@@ -36,32 +36,15 @@ struct Dia {
     let fecha, orto, ocaso: String?
 }
 
-struct EstadoCielo {
-    let value, periodo: String?
-    let descripcion: Descripcion?
+struct EstadoCielo: Codable {
+    let value, periodo, descripcion: String?
 }
 
-enum Descripcion {
-    case despejado
-    case pocoNuboso
-}
-
-struct HumedadRelativa {
+struct HumedadRelativa: Codable {
     let value, periodo: String?
 }
 
-struct VientoAndRachaMax {
-    let direccion: [Direccion]?
-    let velocidad: [String]?
+struct VientoAndRachaMax: Codable {
+    let direccion, velocidad: [String]?
     let periodo, value: String?
 }
-
-enum Direccion {
-    case e
-    case n
-    case ne
-    case no
-    case o
-    case se
-}
-

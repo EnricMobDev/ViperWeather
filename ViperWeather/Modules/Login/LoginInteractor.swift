@@ -13,7 +13,7 @@
 import UIKit
 
 class LoginInteractor: LoginPresenterToInteractorProtocol{
-    
+
     var presenter: LoginInteractorToPresenterProtocol?
     
     func fetchSomething() {

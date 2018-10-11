@@ -39,7 +39,7 @@ class HomePresenter: NSObject, HomeViewToPresenterProtocol, UITableViewDataSourc
     }
     
     func updateView() {
-        interactor?.fetchSomething()
+        interactor?.fetchLocalWeather()
     }
     
     func actionWhenTapTheCell() {
@@ -78,6 +78,37 @@ class HomePresenter: NSObject, HomeViewToPresenterProtocol, UITableViewDataSourc
 }
 
 extension HomePresenter: HomeInteractorToPresenterProtocol {
+    
+    func detailWeatherResponseSucceed(_ response: [LocalWeatherDetailResponse]) {
+        
+        for predictions in response {
+            guard let predictionDay = predictions.prediccion?.dia else { return }
+            
+            for day in predictionDay {
+                guard let skyState = day.estadoCielo else { return }
+                
+                for dayDetail in skyState {
+                    guard let hour = dayDetail.periodo else { return }
+                    guard let description = dayDetail.descripcion else { return }
+                    
+                    createCellWith(hour: hour, sky: description)
+                }
+            }
+        }
+        view?.homeDetailTableView.reloadData()
+    }
+    
+    func createCellWith(hour: String, sky: String) {
+        
+        guard let delegate = view?.homeDetailTableView.delegate as? HomeDetailListCellProtocol else { return }
+        
+        let cell = HomeDetailList(hourText: "Hour", setHourText: "\(hour)h", stateText: "State", setStateText: sky, delegate: delegate)
+        createCells.append(cell)
+    }
+    
+    func detailWeatherResponseFailed(_ error: Error) {
+        print(error)
+    }
     
     func somethingFetched(argument: HomeModel) {
         view?.showSomething(argument: argument)

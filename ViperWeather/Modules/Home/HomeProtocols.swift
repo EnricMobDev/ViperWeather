@@ -15,11 +15,14 @@ protocol HomePresenterToViewProtocol: class{
 
 protocol HomeInteractorToPresenterProtocol: class{
     func somethingFetched(argument: HomeModel)
+    //Service Response
+    func detailWeatherResponseSucceed(_ response: [LocalWeatherDetailResponse])
+    func detailWeatherResponseFailed(_ error: Error)
 }
 
 protocol HomePresenterToInteractorProtocol: class{
     var presenter: HomeInteractorToPresenterProtocol? {get set}
-    func fetchSomething()
+    func fetchLocalWeather()
 }
 
 protocol HomeViewToPresenterProtocol: class{

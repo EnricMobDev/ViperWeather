@@ -11,17 +11,12 @@ import UIKit
 
 internal final class HomeDetailListDrawer: CellDrawerProtocol {
     
-    // MARK: - Constants
-    private struct Constants {
-        static let reuseID = HomeDetailListCell.cellType()
-    }
-    
     // MARK: - CellDrawerProtocol
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        tableView.register(UINib(nibName: HomeDetailListCell.cellType(), bundle: nil), forCellReuseIdentifier: HomeDetailListCell.cellType())
+        tableView.register(UINib(nibName: HomeDetailListCell.cellIdentifier(), bundle: nil), forCellReuseIdentifier: HomeDetailListCell.cellIdentifier())
         
-        return tableView.dequeueReusableCell(withIdentifier: Constants.reuseID, for: indexPath)
+        return tableView.dequeueReusableCell(withIdentifier: HomeDetailListCell.cellIdentifier(), for: indexPath)
     }
     
     func drawCell(_ cell: UITableViewCell, withItem item: Any) {

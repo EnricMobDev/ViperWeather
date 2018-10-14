@@ -10,6 +10,7 @@ import UIKit
 
 protocol CollectionPresenterToViewProtocol: class{
     func showSomething(argument: CollectionModel)
+    var detailCollectionView: UICollectionView! { get set }
 }
 
 protocol CollectionInteractorToPresenterProtocol: class{

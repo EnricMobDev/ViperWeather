@@ -8,14 +8,16 @@
 
 import UIKit
 
-class CollectionViewController: UIViewController {
+class CollectionViewController: UIViewController, UICollectionViewDelegate {
     
     var presenter: CollectionViewToPresenterProtocol?
+    
+    @IBOutlet weak var detailCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.updateView()
-        
+        detailCollectionView.delegate = self
     }
     
     override func didReceiveMemoryWarning() {

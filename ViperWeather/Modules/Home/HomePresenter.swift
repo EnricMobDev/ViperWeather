@@ -25,17 +25,6 @@ class HomePresenter: NSObject, HomeViewToPresenterProtocol, UITableViewDataSourc
         guard let homeDetailTable = view?.homeDetailTableView else { return }
         configure(homeDetailTable)
         view?.homeDetailTableView.dataSource = self
-        
-        guard let delegate = view?.homeDetailTableView.delegate as? HomeDetailListCellProtocol else { return }
-        
-        let fiveHourCell = HomeDetailList(hourText: "Hour", setHourText: "5h", stateText: "State", setStateText: "Sunny", delegate: delegate)
-        createCells.append(fiveHourCell)
-        
-        let sixHourCell = HomeDetailList(hourText: "Hour", setHourText: "6h", stateText: "State", setStateText: "Sunny", delegate: delegate)
-        createCells.append(sixHourCell)
-        
-        let sevenHourCell = HomeDetailList(hourText: "Hour", setHourText: "7h", stateText: "State", setStateText: "Sunny", delegate: delegate)
-        createCells.append(sevenHourCell)
     }
     
     func updateView() {
@@ -102,7 +91,7 @@ extension HomePresenter: HomeInteractorToPresenterProtocol {
         
         guard let delegate = view?.homeDetailTableView.delegate as? HomeDetailListCellProtocol else { return }
         
-        let cell = HomeDetailList(hourText: "Hour", setHourText: "\(hour)h", stateText: "State", setStateText: sky, delegate: delegate)
+        let cell = HomeDetailList(hourText: "Hour", setHourText: "\(hour):00h", stateText: "State", setStateText: sky, delegate: delegate)
         createCells.append(cell)
     }
     

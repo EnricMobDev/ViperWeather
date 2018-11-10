@@ -38,11 +38,10 @@ class APIClient {
     }()
     
     static func performRequest<T:Decodable>(type: ResponseType, serviceRouter: APIRouter, decoder: JSONDecoder, dto: T.Type, completion: @escaping (Alamofire.Result<T>)-> Void) {
-        
      let manager = Manager
-        
+        print("1.")
         manager.request(serviceRouter).responseString { (response) in
-            
+            print("2.")
             switch (response.result){
                 
             case .success(_):

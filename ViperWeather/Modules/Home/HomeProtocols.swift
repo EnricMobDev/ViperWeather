@@ -16,8 +16,8 @@ protocol HomePresenterToViewProtocol: class{
 protocol HomeInteractorToPresenterProtocol: class{
     func somethingFetched(argument: HomeModel)
     //Service Response
-    func detailWeatherResponseSucceed(_ response: [LocalWeatherDetailResponse])
-    func detailWeatherResponseFailed(_ error: Error)
+    func fetchedWeatherSuccess(data: [LocalWeatherDetailResponse])
+    func fetchedWeatherFailed(error: String)
 }
 
 protocol HomePresenterToInteractorProtocol: class{

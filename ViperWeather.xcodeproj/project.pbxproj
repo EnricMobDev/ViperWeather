@@ -32,10 +32,16 @@
 		0C7B2B4B216E311F00636CD3 /* LocalWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B4A216E311E00636CD3 /* LocalWeatherResponse.swift */; };
 		0C7B2B4D216E31D300636CD3 /* LocalWeatherNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B4C216E31D300636CD3 /* LocalWeatherNetwork.swift */; };
 		0C7B2B51216E33E900636CD3 /* LocalWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B2B50216E33E900636CD3 /* LocalWeather.swift */; };
+		0CECA5B3218CA0EA00141925 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECA5B2218CA0EA00141925 /* APIClient.swift */; };
+		0CECA5B5218CA76E00141925 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECA5B4218CA76E00141925 /* APIRouter.swift */; };
+		0CECA5B7218CA7BD00141925 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECA5B6218CA7BD00141925 /* APIConfiguration.swift */; };
+		0CECA5BA218CAB8100141925 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECA5B9218CAB8100141925 /* Constants.swift */; };
+		0CECA5BC218CADD800141925 /* DynamicVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECA5BB218CADD800141925 /* DynamicVariables.swift */; };
+		0CECA5C0218CD61B00141925 /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECA5BF218CD61B00141925 /* WeatherServices.swift */; };
 		0CEDE2212165E70E000E11F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2202165E70E000E11F4 /* AppDelegate.swift */; };
 		0CEDE2282165E70F000E11F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2272165E70F000E11F4 /* Assets.xcassets */; };
 		0CEDE22B2165E70F000E11F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CEDE2292165E70F000E11F4 /* LaunchScreen.storyboard */; };
-		0CEDE2362165E70F000E11F4 /* ViperWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2352165E70F000E11F4 /* ViperWeatherTests.swift */; };
+		0CEDE2362165E70F000E11F4 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2352165E70F000E11F4 /* HomePresenterTests.swift */; };
 		0CEDE2412165E70F000E11F4 /* ViperWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2402165E70F000E11F4 /* ViperWeatherUITests.swift */; };
 		0CEDE2562165E97A000E11F4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2502165E97A000E11F4 /* LoginPresenter.swift */; };
 		0CEDE2572165E97A000E11F4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDE2512165E97A000E11F4 /* LoginRouter.swift */; };
@@ -101,13 +107,19 @@
 		0C7B2B4A216E311E00636CD3 /* LocalWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeatherResponse.swift; sourceTree = "<group>"; };
 		0C7B2B4C216E31D300636CD3 /* LocalWeatherNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeatherNetwork.swift; sourceTree = "<group>"; };
 		0C7B2B50216E33E900636CD3 /* LocalWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeather.swift; sourceTree = "<group>"; };
+		0CECA5B2218CA0EA00141925 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0CECA5B4218CA76E00141925 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		0CECA5B6218CA7BD00141925 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		0CECA5B9218CAB8100141925 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0CECA5BB218CADD800141925 /* DynamicVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicVariables.swift; sourceTree = "<group>"; };
+		0CECA5BF218CD61B00141925 /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
 		0CEDE21D2165E70E000E11F4 /* ViperWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE2202165E70E000E11F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CEDE2272165E70F000E11F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CEDE22A2165E70F000E11F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CEDE22C2165E70F000E11F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CEDE2312165E70F000E11F4 /* ViperWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CEDE2352165E70F000E11F4 /* ViperWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperWeatherTests.swift; sourceTree = "<group>"; };
+		0CEDE2352165E70F000E11F4 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		0CEDE2372165E70F000E11F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CEDE23C2165E70F000E11F4 /* ViperWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEDE2402165E70F000E11F4 /* ViperWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperWeatherUITests.swift; sourceTree = "<group>"; };
@@ -211,6 +223,7 @@
 		0C7B2B16216C981400636CD3 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0CECA5BD218CD5C500141925 /* ServiceCall */,
 				0C7B2B17216C983400636CD3 /* Configuration */,
 				0C7B2B18216C983F00636CD3 /* Endpoints */,
 			);
@@ -220,6 +233,9 @@
 		0C7B2B17216C983400636CD3 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				0CECA5B6218CA7BD00141925 /* APIConfiguration.swift */,
+				0CECA5B4218CA76E00141925 /* APIRouter.swift */,
+				0CECA5B2218CA0EA00141925 /* APIClient.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -312,6 +328,7 @@
 		0C7B2B4E216E33A400636CD3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0CECA5B8218CAB5700141925 /* Constants */,
 				0C7B2B4F216E33BD00636CD3 /* URLS */,
 			);
 			path = Base;
@@ -323,6 +340,31 @@
 				0C7B2B50216E33E900636CD3 /* LocalWeather.swift */,
 			);
 			path = URLS;
+			sourceTree = "<group>";
+		};
+		0CECA5B8218CAB5700141925 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0CECA5B9218CAB8100141925 /* Constants.swift */,
+				0CECA5BB218CADD800141925 /* DynamicVariables.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0CECA5BD218CD5C500141925 /* ServiceCall */ = {
+			isa = PBXGroup;
+			children = (
+				0CECA5BE218CD5F700141925 /* Weather */,
+			);
+			path = ServiceCall;
+			sourceTree = "<group>";
+		};
+		0CECA5BE218CD5F700141925 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				0CECA5BF218CD61B00141925 /* WeatherServices.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		0CEDE2142165E70E000E11F4 = {
@@ -368,7 +410,7 @@
 		0CEDE2342165E70F000E11F4 /* ViperWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				0CEDE2352165E70F000E11F4 /* ViperWeatherTests.swift */,
+				0CEDE2352165E70F000E11F4 /* HomePresenterTests.swift */,
 				0CEDE2372165E70F000E11F4 /* Info.plist */,
 			);
 			path = ViperWeatherTests;
@@ -765,6 +807,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CECA5C0218CD61B00141925 /* WeatherServices.swift in Sources */,
 				0C7B2B40216DE55F00636CD3 /* CollectionProtocols.swift in Sources */,
 				0C7B2B4D216E31D300636CD3 /* LocalWeatherNetwork.swift in Sources */,
 				0CEDE2562165E97A000E11F4 /* LoginPresenter.swift in Sources */,
@@ -774,12 +817,14 @@
 				0C7B2B41216DE55F00636CD3 /* CollectionInteractor.swift in Sources */,
 				0C7B2B28216CB28A00636CD3 /* DrawerItemProtocol.swift in Sources */,
 				0CEDE25A2165E97A000E11F4 /* LoginInteractor.swift in Sources */,
+				0CECA5BC218CADD800141925 /* DynamicVariables.swift in Sources */,
 				0CEDE2572165E97A000E11F4 /* LoginRouter.swift in Sources */,
 				0C7B2B2A216CB31A00636CD3 /* HomeDetailListDrawer.swift in Sources */,
 				0CEDE26921660126000E11F4 /* HomeInteractor.swift in Sources */,
 				0CEDE25B2165E97A000E11F4 /* LoginEntities.swift in Sources */,
 				0CEDE27221666644000E11F4 /* LocalWeatherDetailResponse.swift in Sources */,
 				0C7B2B4B216E311F00636CD3 /* LocalWeatherResponse.swift in Sources */,
+				0CECA5BA218CAB8100141925 /* Constants.swift in Sources */,
 				0C7B2B3F216DE55F00636CD3 /* CollectionViewController.swift in Sources */,
 				0C7B2B24216CB11300636CD3 /* HomeDetailList.swift in Sources */,
 				0C53E3E82173439A002647BD /* CollectionDetailDrawer.swift in Sources */,
@@ -787,12 +832,15 @@
 				0C53E3E021734119002647BD /* DetailDrawerItemProtocol.swift in Sources */,
 				0CEDE2592165E97A000E11F4 /* LoginProtocols.swift in Sources */,
 				0CEDE26721660126000E11F4 /* HomeViewController.swift in Sources */,
+				0CECA5B7218CA7BD00141925 /* APIConfiguration.swift in Sources */,
 				0C7B2B42216DE55F00636CD3 /* CollectionEntities.swift in Sources */,
+				0CECA5B5218CA76E00141925 /* APIRouter.swift in Sources */,
 				0CEDE2582165E97A000E11F4 /* LoginViewController.swift in Sources */,
 				0C53E3EA21734484002647BD /* CollectionIdentifier.swift in Sources */,
 				0CEDE2212165E70E000E11F4 /* AppDelegate.swift in Sources */,
 				0C7B2B49216E099500636CD3 /* CellIdentifier.swift in Sources */,
 				0C7B2B51216E33E900636CD3 /* LocalWeather.swift in Sources */,
+				0CECA5B3218CA0EA00141925 /* APIClient.swift in Sources */,
 				0C53E3E621734322002647BD /* CollectionDetail.swift in Sources */,
 				0C7B2B3D216DE55F00636CD3 /* CollectionPresenter.swift in Sources */,
 				0CEDE26A21660126000E11F4 /* HomeEntities.swift in Sources */,
@@ -808,7 +856,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CEDE2362165E70F000E11F4 /* ViperWeatherTests.swift in Sources */,
+				0CEDE2362165E70F000E11F4 /* HomePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

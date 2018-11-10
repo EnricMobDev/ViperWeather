@@ -67,10 +67,9 @@ class HomePresenter: NSObject, HomeViewToPresenterProtocol, UITableViewDataSourc
 }
 
 extension HomePresenter: HomeInteractorToPresenterProtocol {
-    
-    func detailWeatherResponseSucceed(_ response: [LocalWeatherDetailResponse]) {
+    func fetchedWeatherSuccess(data: [LocalWeatherDetailResponse]) {
         
-        for predictions in response {
+        for predictions in data {
             guard let predictionDay = predictions.prediccion?.dia else { return }
             
             for day in predictionDay {
@@ -86,6 +85,30 @@ extension HomePresenter: HomeInteractorToPresenterProtocol {
         }
         view?.homeDetailTableView.reloadData()
     }
+    
+    func fetchedWeatherFailed(error: String) {
+        print(error)
+    }
+    
+    
+//    func detailWeatherResponseSucceed(_ response: [LocalWeatherDetailResponse]) {
+//
+//        for predictions in response {
+//            guard let predictionDay = predictions.prediccion?.dia else { return }
+//
+//            for day in predictionDay {
+//                guard let skyState = day.estadoCielo else { return }
+//
+//                for dayDetail in skyState {
+//                    guard let hour = dayDetail.periodo else { return }
+//                    guard let description = dayDetail.descripcion else { return }
+//
+//                    createCellWith(hour: hour, sky: description)
+//                }
+//            }
+//        }
+//        view?.homeDetailTableView.reloadData()
+//    }
     
     func createCellWith(hour: String, sky: String) {
         

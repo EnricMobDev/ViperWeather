@@ -61,6 +61,7 @@
 		191C4E79054C4AA50C255E6B /* Pods_ViperWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5068105E9E2158FD20CBDC57 /* Pods_ViperWeatherUITests.framework */; };
 		4D963CF5B6823F437CED7243 /* Pods_ViperWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022F7D33769E650855FBC185 /* Pods_ViperWeatherTests.framework */; };
 		AE725C20050A56E775F6975C /* Pods_ViperWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6850240D48B15E27EF4BAA2A /* Pods_ViperWeather.framework */; };
+		F06A134A2196EBF70006210F /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A13492196EBF70006210F /* APITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		6850240D48B15E27EF4BAA2A /* Pods_ViperWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F3396BEACA9C756F70F0FA /* Pods-ViperWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherTests/Pods-ViperWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E04103D1782F85D31E614235 /* Pods-ViperWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherUITests/Pods-ViperWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F06A13492196EBF70006210F /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		FEE12B2EA7DEBF94796E39E8 /* Pods-ViperWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeather/Pods-ViperWeather.release.xcconfig"; sourceTree = "<group>"; };
 		FF4777B4B9A29B61933C70B0 /* Pods-ViperWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperWeatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperWeatherUITests/Pods-ViperWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -412,6 +414,7 @@
 			children = (
 				0CEDE2352165E70F000E11F4 /* HomePresenterTests.swift */,
 				0CEDE2372165E70F000E11F4 /* Info.plist */,
+				F06A13492196EBF70006210F /* APITests.swift */,
 			);
 			path = ViperWeatherTests;
 			sourceTree = "<group>";
@@ -856,6 +859,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06A134A2196EBF70006210F /* APITests.swift in Sources */,
 				0CEDE2362165E70F000E11F4 /* HomePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
